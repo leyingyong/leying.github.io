@@ -66,7 +66,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 });
 
 // Add an event listener to all modals with videos
-const modals = document.querySelectorAll('.v-modal');
+const modals = document.querySelectorAll('.modal');
 
 modals.forEach(modal => {
   modal.addEventListener('hidden.bs.modal', function () {
