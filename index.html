@@ -1,74 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #333;
-            color: white;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            color: white;
-            background: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-    </style>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WV8G1C7GVH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-WV8G1C7GVH');
-</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title of the Page -->
+  <title>Yong Le Ying | Multimedia Computing Student Portfolio</title>
+  <meta name="description"
+    content="Yong Le Ying's portfolio showcasing web development, programming, and design projects. Explore my work in multimedia computing, web design, and digital animation.">
+  <meta name="keywords"
+    content="Yong Le Ying, Multimedia Computing, Portfolio, Web Developer, Web Design, Website, Programming, HTML, CSS, JavaScript, SQL, Digital Animation">
+
+
+  <meta name="robots" content="index,follow">
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WV8G1C7GVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WV8G1C7GVH');
+  </script>
 </head>
+
 <body>
-    <header>
-        My Personal Website
-    </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Hi! I'm [Your Name]. Welcome to my personal website where I share my projects and ideas.</p>
+  <header class="navbar sticky-top navbar-expand-md" style="background-color: #48A6A7;">
+    <nav class="container-fluid">
+      <a class="navbar-brand ps-md-5 fw-semibold" href="index.html">LE YING</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-md-5">
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="about.html">About Me</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="welcome" class="welcome">
+      <div class="text-center">
+        <h1 class="mb-5" data-animate="slide-up">Welcome to My Portfolio</h1>
+        <p class="mb-4" data-animate="fade-in" data-delay="300">Hello! I'm <strong>Yong Le Ying</strong>, a passionate
+          <strong>Multimedia Computing
+            student</strong> with
+          creative and technical skills across <strong>web development</strong>, <strong>visual design</strong>, and
+          <strong>digital animation</strong>.
+        </p>
+        <p class="mb-4" data-animate="fade-in" data-delay="500">Feel free to explore my projects, <a type="button"
+            class="" href="about.html">learn more</a>
+          about my
+          background, or <a href="#contact">get in touch</a> for
+          potential collaborations and opportunities.
+        </p>
+      </div>
     </section>
-    <section>
-        <h2>Projects</h2>
-        <p>Check out my latest work and contributions.</p>
-        <a href="#" class="button">View Projects</a>
+    <section id="projects" class="container-fluid my-5">
+      <div class="row">
+        <div class="col-lg mx-3-lg image-display ratio ratio-16x9" data-animate="fade-in">
+          <img src="img/instagraham.png" alt="Website Design" id="displayed-image" class="img">
+        </div>
+        <div class="col-lg margin" data-animate="slide-up" data-delay="200">
+          <div class="text-items">
+            <div class="text-item active" data-image="img/instagraham.png">
+              <p class="h2">Web Development</p>
+              <span>A responsive website designed with simple and user-friendly features.</span>
+            </div>
+            <div class="text-item" data-image="img/cafe-poster.png">
+              <p class="h2">Visual Design</p>
+              <span>A collection of visual design projects, including posters and packaging.</span>
+            </div>
+            <div class="text-item" data-image="img/nian.png">
+              <p class="h2">Digital animation</p>
+              <span>Short 2D animations created to explore motion and storytelling.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pro-box mt-5 row">
+        <div class="col-md-9" data-animate="fade-in" data-delay="400">
+          <h2 class="mb-3">Check out my projects</h2>
+          <p class="text-justify">Explore my work in web development, programming, and database design. I've worked on
+            various projects that
+            showcase my skills in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>,
+            <strong>Python</strong>, and more.
+          </p>
+        </div>
+        <div class="col-md-3 view-btn">
+          <a type="button" class="btn btn-primary btn-sm" href="projects.html">
+            View Projects
+          </a>
+        </div>
+      </div>
     </section>
-    <section>
-        <h2>Contact</h2>
-        <p>Feel free to reach out via email at <strong>your@email.com</strong></p>
+    <section id="contact" class="mb-5" data-animate="fade-in">
+      <h2 class="mb-4 text-center">Contact Me</h2>
+      <div class="row box-flex">
+        <div class="box col-lg-8">
+          <ul class="navbar-nav link mb-3">
+            <li class="nav-item">
+              <a href="https://github.com/leyingyong" target="_blank" class="nav-link"><i
+                  class="bi bi-github fs-3"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://linkedin.com/in/yong-le-ying" target="_blank" class="nav-link"><i
+                  class="bi bi-linkedin fs-3"></i></a>
+            </li>
+          </ul>
+          <form id="contactForm">
+            <input class="form-control mb-3 focus" type="text" id="name" name="name" placeholder="Your Name" required>
+            <input class="form-control mb-3 focus" type="email" id="email" name="email" placeholder="Your Email"
+              required>
+            <textarea class="form-control mb-3 focus" id="message" name="message" placeholder="Your Message"
+              required></textarea>
+            <div class="text-end">
+              <button class="btn btn-primary btn-sm" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
-    <footer>
-        &copy; 2025 My Personal Website
-    </footer>
+  </main>
+
+  <footer class="mt-5 container-fluid py-3">
+    <nav>
+      <ul class="navbar-nav link">
+        <li class="nav-item">
+          <a href="https://github.com/leyingyong" target="_blank" class="nav-link"><i class="bi bi-github fs-5"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://linkedin.com/in/yong-le-ying" target="_blank" class="nav-link"><i
+              class="bi bi-linkedin fs-5"></i></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav link">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Me</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="text-center mt-3 mb-0">&copy; 2025 Yong Le Ying</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
