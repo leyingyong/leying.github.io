@@ -58,15 +58,38 @@
       <div class="projects">
         <h1 class="mb-3 text-center" data-animate="slide-up">Project Portfolio</h1>
         <p class="text-center" data-animate="fade-in" data-delay="200">A showcase of my work from <strong>2022</strong>
-          to <strong>2024</strong>, including websites, design pieces, and animations.</p>
+          to <strong>2025</strong>, including websites, design pieces, and animations.</p>
       </div>
     </section>
 
     <section id="Website" class="mt-4 mb-3">
-      <h2 class="mb-3 mt-4 text-center" data-animate="fade-in" data-delay="200">Website</h2>
-      <p class="mb-4 text-center" data-animate="fade-in" data-delay="400">Websites developed using HTML, CSS,
-        JavaScript, and PHP, showing my skills in design, coding, and building responsive layouts.</p>
+      <h2 class="mb-3 mt-4 text-center" data-animate="fade-in" data-delay="200">Development Projects</h2>
+      <p class="mb-4 text-center" data-animate="fade-in" data-delay="400">A diverse selection of development projects,
+        including responsive websites using HTML, CSS, JavaScript, and PHP; desktop applications built with JavaFX; and
+        automation scripts developed in Python.</p>
       <div class="row" data-animate="fade-in" data-delay="400">
+        <div class="col-lg-6 mb-4">
+          <div type="button" data-bs-toggle="modal" data-bs-target="#Java">
+            <div class="card hover">
+              <img src="img/Java.png" class="card-img-top" alt="Screenshot of JavaFX Desktop App">
+              <div class="card-body">
+                <h3 class="card-title text-center h6">JavaFX Desktop App</h3>
+                <div class="text-center mt-3"><button class="btn btn-primary btn-sm">View Project</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div type="button" data-bs-toggle="modal" data-bs-target="#auto">
+            <div class="card hover">
+              <img src="img/auto.png" class="card-img-top" alt="Screenshot of automation script">
+              <div class="card-body">
+                <h3 class="card-title text-center h6">Automation Scripts</h3>
+                <div class="text-center mt-3"><button class="btn btn-primary btn-sm">View Project</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-lg-6 mb-4">
           <div type="button" data-bs-toggle="modal" data-bs-target="#group">
             <div class="card hover">
@@ -216,6 +239,73 @@
 
     <!-- Modal -->
     <section id="modal">
+      <div class="modal v-modal fade" id="Java" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-5 h2" id="exampleModalLabel">JavaFX Desktop App</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row justify-content-center">
+                <div class="col-lg-10 mb-2">
+                  <div class="ratio ratio-16x9">
+                    <video class="object-fit-cover rounded" controls>
+                      <source src="video/JavaFxProject.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <p class="mb-1"><b>Date:</b> 4 May 2025</p>
+                  <p class="mb-1"><b>Development Skills:</b> Java</p>
+                  <p class="mb-1 text-justify"><b>Overview:</b> This JavaFX-based desktop application retrieves data
+                    from a website in JSON format. It parses and processes the data to generate dynamic
+                    visualisations, including interactive bar and line charts. Users can apply multiple filters to
+                    customise the data view, enabling deeper insights and tailored analysis.</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal v-modal fade" id="auto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-5 h2" id="exampleModalLabel">Automation Scripts</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row justify-content-center">
+                <div class="col-lg-10 mb-2">
+                  <div class="ratio ratio-16x9">
+                    <video class="object-fit-cover rounded" controls>
+                      <source src="video/automation.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <p class="mb-1"><b>Date:</b> 28 April 2025</p>
+                  <p class="mb-1"><b>Development Skills:</b> Python</p>
+                  <p class="mb-0 text-justify"><b>Overview:</b> This project involved developing Python automation
+                    scripts to streamline manual workflows across multiple departments within a company. The scripts
+                    automate repetitive tasks such as filling in product details, mapping data, and filtering large
+                    datasets. These standalone scripts run on Google Colab and have significantly reduced manual
+                    effort, improved accuracy, and saved valuable time across business units.</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div class="modal fade" id="group" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
@@ -436,7 +526,7 @@
                   </div>
                   <div class="col-lg-7 mt-2 mt-md-auto mb-md-auto">
                     <p class="mb-2"><b>Date:</b> 26 July 2024</p>
-                    <p class="mb-2">Software:</b> Adobe Illustrator</p>
+                    <p class="mb-2"><b>Software:</b> Adobe Illustrator</p>
                     <p class="mb-1"><b>Overview:</b></p>
                     <p class="text-justify">This project explores typography as a dynamic element, using Figurative
                       Typography to integrate type with its environment. A catchphrase is crafted to blend seamlessly,
@@ -494,7 +584,7 @@
                   </div>
                   <div class="col-lg-7 mt-2 mt-md-auto mb-md-auto">
                     <p class="mb-2"><b>Date:</b> 12 August 2022</p>
-                    <p class="mb-2">Software:</b> Adobe Illustrator</p>
+                    <p class="mb-2"><b>Software:</b> Adobe Illustrator</p>
                     <p class="mb-1"><b>Overview:</b></p>
                     <p class="text-justify">Designing a refreshed packaging concept for Kao White soap, including a
                       newly
